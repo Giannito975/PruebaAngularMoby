@@ -1,0 +1,17 @@
+<h1>List post</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Post</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let postItems of postArrayMinimized">
+      <th>{{ postItems.id }}</th>
+      <th>{{ postItems.title }}</th>
+      <th><a href="/post/{{ postItems.id }}">Ver</a></th>
+    </tr>
+  </tbody>
+</table>

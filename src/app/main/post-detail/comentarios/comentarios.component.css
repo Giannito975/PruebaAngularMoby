@@ -1,0 +1,19 @@
+.comments-container {
+  border: 2.5px solid;
+}
+
+.comments-container-title {
+  text-align: center;
+  background-color: rgba(221, 221, 221, 0.781);
+  padding-top: 0.5%;
+}
+
+h3 {
+  margin: 0px auto;
+  border-bottom: 2.5px solid;
+}
+
+.comments-data {
+  margin-bottom: 2%;
+  padding-left: 0.5%;
+}
