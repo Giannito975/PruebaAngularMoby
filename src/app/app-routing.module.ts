@@ -6,17 +6,25 @@ import { PostListComponent } from './main/post-list/post-list.component';
 
 const routes: Routes = [
   {
-    path:'posts',
+    path: 'posts',
     component: PostListComponent,
   },
   {
-    path:'post/:id',
+    path: '', component: PostListComponent,
+  },
+  {
+    path: 'post/:id',
     component: PostDetailComponent,
   },
   {
+    path: '404',
+    component: ErrorViewComponent,
+  },
+  {
     path: '**',
-    component: ErrorViewComponent
-  }
+    redirectTo: '404',
+    pathMatch: 'full',
+  },
 ];
 
 export const routing = RouterModule.forRoot(routes);
