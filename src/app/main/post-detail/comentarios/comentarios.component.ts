@@ -21,8 +21,8 @@ export class ComentariosComponent implements OnInit {
     })
   }
 
-  loadData(id : string) {
-    this.postService.getUrl(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
+  loadData(id : number) {
+    this.postService.getPostComments(id)
     .subscribe(info => {
       this.comments = info;
     })

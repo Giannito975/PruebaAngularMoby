@@ -13,6 +13,7 @@ export class PostDetailComponent implements OnInit {
   public id : any;
   public info : any;
   public post : any;
+  public date : any;
 
   constructor(private route : ActivatedRoute, private postService : PostService) { }
 
@@ -23,9 +24,9 @@ export class PostDetailComponent implements OnInit {
     })
   }
 
-  loadData(id : string) {
+  loadData(id : number) {
     //alert(id);
-    this.postService.getUrl(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    this.postService.getPostDetail(id)
     .subscribe(info => {
        this.post = info;
     })
