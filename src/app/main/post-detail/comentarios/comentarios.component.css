@@ -18,6 +18,11 @@ h3 {
   padding-left: 0.5%;
 }
 
-emitir-button {
-  text-align: center;
+button {
+  margin-left: 1190px;
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
 }
+
+
