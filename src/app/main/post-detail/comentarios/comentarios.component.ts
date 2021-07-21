@@ -1,7 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PostService } from 'src/app/service/post.service';
-//import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'app-comentarios',
