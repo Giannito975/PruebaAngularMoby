@@ -25,4 +25,15 @@ p {
     font-size: x-large;
 }
 
+.volver-btn {
+  margin-top: 30px;
+    margin-left: 600px;
+    border: 1px;
+    border-style: solid;
+    align-items: center;
+    text-decoration: none;
+    background-color: #0000ff3b;
+    font-style: normal;
+}
+
 
