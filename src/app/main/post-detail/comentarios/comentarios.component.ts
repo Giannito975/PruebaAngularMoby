@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PostService } from 'src/app/service/post.service';
+//import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'app-comentarios',
@@ -11,6 +12,7 @@ export class ComentariosComponent implements OnInit {
 
   public info : any [];
   public comments : any;
+  fecha : any = new Date();
 
   constructor(private route : ActivatedRoute, private postService : PostService) { }
 
@@ -27,5 +29,15 @@ export class ComentariosComponent implements OnInit {
       this.comments = info;
     })
   }
+
+  @Output()
+  emitirFechaComentario = new EventEmitter();
+
+  enviarFechaComentario(){
+    this.emitirFechaComentario.emit(this.fecha);
+  }
+
+
+
 
 }

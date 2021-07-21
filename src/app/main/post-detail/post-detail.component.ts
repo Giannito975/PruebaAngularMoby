@@ -14,6 +14,7 @@ export class PostDetailComponent implements OnInit {
   public info : any;
   public post : any;
   public date : any;
+  public fecha : any;
 
   constructor(private route : ActivatedRoute, private postService : PostService) { }
 
@@ -30,6 +31,10 @@ export class PostDetailComponent implements OnInit {
     .subscribe(info => {
        this.post = info;
     })
+  }
+
+  recibirFecha(fecha){
+    this.fecha = fecha;
   }
 
 }

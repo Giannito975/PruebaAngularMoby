@@ -1,6 +1,7 @@
 <div class="post-container">
   <h1>Detail post: {{ post.id }}</h1>
+  <p class="fecha-comentario" *ngIf="fecha">Last comment: {{ fecha |date:'dd/mm/yyyy' }}</p>
   <h3 class="to-upper-case">{{ post.title }}</h3>
   <p>{{ post.body }}</p>
-  <app-comentarios></app-comentarios>
+  <app-comentarios (emitirFechaComentario)="recibirFecha($event)"></app-comentarios>
 </div>
