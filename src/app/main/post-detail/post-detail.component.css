@@ -14,4 +14,15 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.post-header {
+  display: inline-flex;
+}
+
+.fecha-comentario {
+  margin-top: 25px;
+    margin-left: 2000px;
+    text-decoration: solid;
+    font-size: x-large;
+}
+
 
