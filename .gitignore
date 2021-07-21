@@ -1,5 +1,5 @@
 #Ignora carpeta node_modules
-node_modules
+/node_modules
 
 #Ignora carpeta ide VSCode
-.VSCode
+/.VSCode
