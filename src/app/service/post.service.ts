@@ -9,8 +9,8 @@ export class PostService {
 
   //Endpoint of all the posts.
   postsUrl = 'https://jsonplaceholder.typicode.com/posts';
-  postDetailUrl = '';
-  commentsUrl = '';
+  postDetailUrl = 'https://jsonplaceholder.typicode.com/posts/';
+  commentsUrl = 'https://jsonplaceholder.typicode.com/comments?postId=';
 
   constructor(private http: HttpClient) {
   }
